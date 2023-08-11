@@ -1,0 +1,6 @@
+div {
+	max-width: min(90%, 800px);
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1em;
+}

@@ -1,0 +1,17 @@
+.hidden {
+	display: none;
+}
+
+#restart-button {
+	background-color: #1a237e;
+	color: #fff;
+}
+
+#win-mult-button, #lose-mult-button, #streak-forgive-button {
+	color: #fff;
+	background-color: #454545;
+}
+
+section {
+	padding-top: 10px;
+}

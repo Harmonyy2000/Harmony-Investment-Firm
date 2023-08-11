@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Harmony Investment Firm</title>
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/simulator.css">
+		<link rel="icon" href="resources/favicon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="scripts/simulator.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="resources/brand_header.png" id="brand_header" alt="Harmony Investment Firm, financial success starts here">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="performance.html">Performance</a></li>
+					<li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="simulator.html">Market Simulator</a></li>
+					<li class="center"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section class="alternate">
+			<h1>Can you beat the market?</h1>
+			<div>
+				<p>Guess what the next month's stock price will be and win the difference!<br>If you're wrong, be ready to take out a loan!</p>
+				<p>You have 30 years (360 months) to try to beat the 7% interest the bot is making.</p>
+			</div>
+		</section>
+		<section>
+			<div id="play-button">
+				<p><button onclick="startGame()">Play Now!</button></p>
+			</div>
+			<div class="hidden" id="game-div">
+				<h1>Month: <span id="month"></span></h1>
+				<h3>Your Balance: <span id="player-balance"></span></h3>
+				<h3>Bot's Balance: <span id="bot-balance"></span></h3>
+				<p>Stock Price: <span id="stock-price"></span></p>
+				<button id="restart-button" onclick="startGame()">Restart</button>
+				<button id="contact-button" onclick="window.location.href='contact.html'">Contact Us</button>
+				<button id="lower-button" onclick="guess('lower')">Lower</button>
+				<button id="higher-button" onclick="guess('higher')">Higher</button>
+				<p>Streak: <span id="streak"></span></p>
+				<p><button id="streak-forgive-button" onclick="buyUpgrade(upgrades.streakForgive)">Streak Forgiveness!<br>
+				Amount: <span id="streak-forgive-amount"></span><br>
+				Cost: <span id="streak-forgive-price"></span></button></p>
+				<p><button id="win-multi-button" onclick="buyUpgrade(upgrades.winMulti)">Buy More Shares!<br>
+				Win Multiplier: <span id="win-multi-amount"></span>x<br>
+				Cost: <span id="win-multi-price"></span></button></p>
+				<p><button id="lose-multi-button" onclick="buyUpgrade(upgrades.loseMulti)">Tax Loss Harvest!<br>
+				Loss Multiplier: <span id="lose-multi-amount"></span>x<br>
+				Cost: <span id="lose-multi-price"></span></button></p>
+			</div>
+		</section>
+		
+		<button onclick="window.location.href='contact.html'" class="large-appointment-button">Request Appointment</button>
+		<button onclick="window.location.href='contact.html'" class="small-appointment-button"><img src="resources/appointment.png" alt="Make appointment" width=30px></button>
+		
+		<footer>
+			<div class="social-media-links">
+				<a href="https://facebook.com" class="fa fa-facebook"></a>
+				<a href="https://twitter.com" class="fa fa-twitter"></a>
+				<a href="https://youtube.com" class="fa fa-youtube"></a>
+			</div>
+			<p>&copy; 2023 Harmony Investment Firm. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

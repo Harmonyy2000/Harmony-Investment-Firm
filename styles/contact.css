@@ -1,0 +1,41 @@
+/* Properties for the contact form */
+section {
+	max-width: min(90%, 800px);
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1em;
+}
+
+form {
+	padding: min(5%, 25px);
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #f0f0f0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 0;
+	color: #394191;
+}
+
+form input, form textarea {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+input[type=text]:not(:focus):not(:placeholder-shown):invalid,
+input[type=email]:not(:focus):not(:placeholder-shown):invalid,
+input[type=tel]:not(:focus):not(:placeholder-shown):invalid,
+input[type=number]:not(:focus):not(:placeholder-shown):invalid {
+	border: 1px solid red;
+}
+

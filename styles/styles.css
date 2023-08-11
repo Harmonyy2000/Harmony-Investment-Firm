@@ -1,0 +1,201 @@
+/* Properties for body, header, and footer */
+body {
+	font-family: myFont;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: myFont;
+	src: url('../fonts/laila_semibold.ttf');
+}
+
+header {
+	background-color: #454545;
+	color: #fff;
+	padding: 15px;
+}
+
+#brand_header {
+	max-width: 99%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+nav li {
+	list-style: none;
+}
+
+@media (min-width: 880px) {
+	nav ul {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+	}
+
+	nav li {
+		margin: 0 15px;
+	}
+}
+
+@media (max-width: 879px) {
+	nav ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-items: center;
+		padding: 0;
+	}
+	
+	.center {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+}
+
+@media (max-width: 593px) {
+	nav ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		padding: 0;
+	}
+	
+	.center {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+footer {
+	background-color: #454545;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	width: 15px;
+	background: #3B5998;
+	color: white;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+.fa-youtube {
+	background: #FF0000;
+	color: white;
+}
+
+/* Properties for all buttons and extra styling for appointment button */
+button {
+	background-color: #C9EFC7;
+	color: #1a237e;
+	font-size: 18px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #A1D9A5;
+}
+
+@media (min-width: 700px) {
+	.large-appointment-button {
+		display: inline-block;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #1a237e;
+		color: #fff;
+	}
+
+	.large-appointment-button:hover {
+		background-color: #394191;
+	}
+	.small-appointment-button {
+		display: none;
+	}
+}
+
+@media (max-width: 699px) {
+	.large-appointment-button {
+		display: none;
+	}
+	.small-appointment-button {
+		display: inline-block;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #1a237e;
+		color: #fff;
+	}
+
+	.small-appointment-button:hover {
+		background-color: #394191;
+	}
+}
+
+/* Properties for everything else miscellaneous */
+h1 {
+	font-size: 2.5em;
+	font-weight: bolder;
+	color: #1a237e;
+}
+
+h2 {
+	font-size: 1.875em;
+	font-weight: bold;
+	color: #394191;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+section {
+	text-align: center;
+	padding: 25px 0;
+}
+
+p, form, table {
+	max-width: min(90%, 800px);
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1em;
+}
+
+.text p {
+	text-align: left;
+}
+
+.alternate {
+	background-color: #f0f0f0;
+}

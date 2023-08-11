@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Harmony Investment Firm</title>
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/performance.css">
+		<link rel="icon" href="resources/favicon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			<img src="resources/brand_header.png" id="brand_header" alt="Harmony Investment Firm, financial success starts here">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="performance.html">Performance</a></li>
+					<li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="simulator.html">Market Simulator</a></li>
+					<li class="center"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<h1>Performance</h1>
+			<p>Check out the performance of some of our top funds and ETFs below:</p>
+			<p><table id="fund-table">
+				<tr>
+					<th onclick="sortTable(0)">Fund/ETF Name</th>
+					<th onclick="sortTable(1)">Risk (1-5)</th>
+					<th onclick="sortTable(3)">1-Year Return (%)</th>
+					<th onclick="sortTable(4)">5-Year Return (%)</th>
+					<th onclick="sortTable(5)">10-Year Return (%)</th>
+				</tr>
+				<tr>
+					<td>Harmony Growth Fund</td>
+					<td>4</td>
+					<td>15.3</td>
+					<td>73.6</td>
+					<td>168.2</td>
+				</tr>
+				<tr>
+					<td>Global Income ETF</td>
+					<td>3</td>
+					<td>8.9</td>
+					<td>40.2</td>
+					<td>102.5</td>
+				</tr>
+				<tr>
+					<td>Tech Titans Fund</td>
+					<td>5</td>
+					<td>25.1</td>
+					<td>120.8</td>
+					<td>265.5</td>
+				</tr>
+				<tr>
+					<td>Environment Impact ETF</td>
+					<td>2</td>
+					<td>18.6</td>
+					<td>85.4</td>
+					<td>192.7</td>
+				</tr>
+				<tr>
+					<td>Healthcare Innovators Fund</td>
+					<td>3</td>
+					<td>12.8</td>
+					<td>62.3</td>
+					<td>142.9</td>
+				</tr>
+			</table></p>
+			<div>
+				<h2>Funds</h2>
+			</div>
+			<div>
+				<h3>Harmony Growth Fund</h3>
+				<p>The Harmony Growth Fund focuses on long-term capital appreciation by investing 
+				in companies with high growth potential across various industries. This fund seeks to 
+				outperform market benchmarks by identifying innovative and promising opportunities.</p>
+			</div>
+			<div>
+				<h3>Global Income ETF</h3>
+				<p>The Global Income ETF provides investors with exposure to a diversified portfolio 
+				of income-generating assets from around the world. This ETF aims to deliver consistent 
+				income through investments in bonds, dividend-paying stocks, and other fixed-income 
+				securities.</p>
+			</div>
+			<div>
+				<h3>Tech Titans Fund</h3>
+				<p>The Tech Titans Fund focuses on high-risk, high-reward investments in leading 
+				technology companies. With a concentrated portfolio of innovative giants, this fund aims 
+				to capture the growth potential of the tech sector while acknowledging its inherent 
+				volatility.</p>
+			</div>
+			<div>
+				<h3>Environment Impact ETF</h3>
+				<p>The Environmental Impact ETF seeks to align investments with sustainability goals 
+				by targeting companies with strong environmental practices and positive societal impact. 
+				This ETF invests in eco-friendly industries, promoting both financial returns and 
+				positive change.</p>
+			</div>
+			<div>
+				<h3>Healthcare Innovators Fund</h3>
+				<p>The Healthcare Innovators Fund focuses on investments in companies at the forefront 
+				of medical breakthroughs and healthcare advancements. This fund aims to capitalize on 
+				the evolving healthcare landscape, potentially offering growth opportunities while 
+				managing risks.</p>
+			</div>
+			<div>
+				<button onclick="window.location.href='contact.html'">Contact Us</button>
+			</div>
+		</section>
+		
+		<button onclick="window.location.href='contact.html'" class="large-appointment-button">Request Appointment</button>
+		<button onclick="window.location.href='contact.html'" class="small-appointment-button"><img src="resources/appointment.png" alt="Make appointment" width=30px></button>
+		
+		<footer>
+			<div class="social-media-links">
+				<a href="https://facebook.com" class="fa fa-facebook"></a>
+				<a href="https://twitter.com" class="fa fa-twitter"></a>
+				<a href="https://youtube.com" class="fa fa-youtube"></a>
+			</div>
+			<p>&copy; 2023 Harmony Investment Firm. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
