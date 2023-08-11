@@ -1,2 +1,2 @@
-# harmony-investment-firm
+# Harmony Investment Firm
 Final project for my Web Development class.
